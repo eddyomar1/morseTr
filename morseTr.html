@@ -8,14 +8,20 @@
 </head>
 <body align="center">
 
-<h1 id="b"></h1>
+<h1 id="b">welcome</h1>
+<h1 id="ba"></h1>
 <input type="text" value="" id="a">
     <select id="kf">
 
-        <option value="co">codificar</option>
-        <option value="de">decodificar</option>
+        <option value="co" onclick="k();">codificar</option>
+        <option value="de" onfocus="ke();">decodificar</option>
 
     </select>
+
+<button onclick="k();">codificar</button>
+
+<button onclick="ke();">descodificar</button>
+
 
 <script>
 
@@ -25,10 +31,13 @@ var k = function(){
 var inp = document.getElementById("a").value;
 var out = "";
 
+var kf = document.getElementById("kf").value;
+
 for(var x = 0;x<inp.length;x++){
    
+    //if(kf=="de"){break;}
+
 if(inp.charAt(x)=="a" || inp.charAt(x)=="A"){out += ".-"}
-if(inp.charAt(x)=="."){out += "a"}
 if(inp.charAt(x)=="b" ||inp.charAt(x)=="B"){out += "-..."}
 if(inp.charAt(x)=="c" ||inp.charAt(x)=="C"){out += "-.-."}
 if(inp.charAt(x)=="d" ||inp.charAt(x)=="D"){out += "-.."}
@@ -66,75 +75,65 @@ if(inp.charAt(x)=="9"){out += "----."}
 if(inp.charAt(x)=="0"){out += "-----"}
 if(inp.charAt(x)==String.fromCharCode(32)){out += String.fromCharCode(32)}
 
+    
+
 }
 document.getElementById("b").innerHTML = out;
 
-var kf = document.getElementById("kf").value;
-
-//if(kf=="decodificar"){clearInterval(cod); var dec = setInterval(ke,5);}
-
 }
 
-var cod = setInterval(k,5);
 
-
-//camba a decodificar
-
-/*
 var ke = function(){
 var inp = document.getElementById("a").value;
 var out = "";
 
+var kf = document.getElementById("kf").value;
+
 for(var x = 0;x<inp.length;x++){
    
-if(inp.charAt(x)==".-"){out += "a"}
-if(inp.charAt(x)=="b" ||inp.charAt(x)=="B"){out += "-..."}
-if(inp.charAt(x)=="c" ||inp.charAt(x)=="C"){out += "-.-."}
-if(inp.charAt(x)=="d" ||inp.charAt(x)=="D"){out += "-.."}
-if(inp.charAt(x)=="e" ||inp.charAt(x)=="E"){out += "."}
-if(inp.charAt(x)=="f" ||inp.charAt(x)=="F"){out += "..-."}
-if(inp.charAt(x)=="g" ||inp.charAt(x)=="G"){out += "--."}
-if(inp.charAt(x)=="h" ||inp.charAt(x)=="H"){out += "...."}
-if(inp.charAt(x)=="i" ||inp.charAt(x)=="I"){out += ".."}
-if(inp.charAt(x)=="j" ||inp.charAt(x)=="J"){out += ".---"}
-if(inp.charAt(x)=="k" ||inp.charAt(x)=="K"){out += "-.-"}
-if(inp.charAt(x)=="l" ||inp.charAt(x)=="L"){out += ".-.."}
-if(inp.charAt(x)=="m" ||inp.charAt(x)=="M"){out += "--"}
-if(inp.charAt(x)=="n" ||inp.charAt(x)=="N"){out += "-."}
-if(inp.charAt(x)=="o" ||inp.charAt(x)=="O"){out += "---"}
-if(inp.charAt(x)=="p" ||inp.charAt(x)=="P"){out += ".--."}
-if(inp.charAt(x)=="q" ||inp.charAt(x)=="Q"){out += "--.-"}
-if(inp.charAt(x)=="r" ||inp.charAt(x)=="R"){out += ".-."}
-if(inp.charAt(x)=="s" ||inp.charAt(x)=="S"){out += "..."}
-if(inp.charAt(x)=="t" ||inp.charAt(x)=="T"){out += "-"}
-if(inp.charAt(x)=="u" ||inp.charAt(x)=="U"){out += "..-"}
-if(inp.charAt(x)=="v" ||inp.charAt(x)=="V"){out += "...-"}
-if(inp.charAt(x)=="w" ||inp.charAt(x)=="W"){out += ".--"}
-if(inp.charAt(x)=="x" ||inp.charAt(x)=="X"){out += "-..-"}
-if(inp.charAt(x)=="y" ||inp.charAt(x)=="Y"){out += "-.--"}
-if(inp.charAt(x)=="z" ||inp.charAt(x)=="Z"){out += "--.."}
-if(inp.charAt(x)=="1"){out += ".----"}
-if(inp.charAt(x)=="2"){out += "..---"}
-if(inp.charAt(x)=="3"){out += "...--"}
-if(inp.charAt(x)=="4"){out += "....-"}
-if(inp.charAt(x)=="5"){out += "....."}
-if(inp.charAt(x)=="6"){out += "-...."}
-if(inp.charAt(x)=="7"){out += "--..."}
-if(inp.charAt(x)=="8"){out += "---.."}
-if(inp.charAt(x)=="9"){out += "----."}
-if(inp.charAt(x)=="0"){out += "-----"}
+    //if(kf=="co"){break;}
+
+if(inp.charAt(x)=="-" && inp.charAt(x+1)=="."){out += "a"}
 
 }
 document.getElementById("b").innerHTML = out;
 
-var kf = document.getElementById("kf").value;
-
-if(kf=="codificar"){clearInterval(dec); var cod = setInterval(k,5);}
 }
-hello da
+
+
+
+
+
+/*/var kfull = function(){
+    var kf = document.getElementById("kf").value;
+    var fn;
+var inpp = document.getElementById("a");
+
+//inpp.addEventListener('onclick', () => {
+
+   
+    
+   if(kf=="co"){
+    fn=k(); 
+    }else{
+    fn=ke();
+    
+   }
+
+    
+
+//});
+
+
+
+
+
+//}
+
+//setInterval(kfull,0);
+
 
 */
-
 //var ti = new Date(); var s = ti.getSeconds();
 </script>
 
