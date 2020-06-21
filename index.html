@@ -9,15 +9,18 @@
 </head>
 <body align="center">
 
-<h1 id="b">welcome</h1>
-<h1 id="ba"></h1>
+<h1 id="b" style="display: none;">welcome</h1>
+<br>
+<textarea id="ba" rows="4" cols="50">Hi</textarea>
+<br>
 <input type="text" value="" id="a">
-    <select id="kf" disabled>
+    <select id="kf" style="display: none;" title="esta funcion esta fuera de servicio por ahora" disabled>
 
         <option value="co" onclick="k();">codificar</option>
         <option value="de" onfocus="ke();">decodificar</option>
 
     </select>
+<button onclick="myFunction();">copiar</button>
 
 <button onclick="k();">codificar</button>
 
@@ -87,6 +90,8 @@ if(inp.charAt(x)==String.fromCharCode(32)){out += String.fromCharCode(44)}
 }
 document.getElementById("b").innerHTML = out;
 
+document.getElementById("ba").innerHTML = out;
+
 }
 
 
@@ -134,7 +139,42 @@ if(inp.charAt(x)==String.fromCharCode(44)){out += String.fromCharCode(32)}
 }
 document.getElementById("b").innerHTML = out;
 
+document.getElementById("ba").innerHTML = document.getElementById("b").innerHTML;
+
 }
+
+
+var copiar = function(){
+
+var cp = document.getElementById("b").innerHTML;
+ 
+ cp.select();
+ cp.setSelectionRange(0, 99999);
+
+    document.execCommand("copy");
+
+
+
+}
+
+
+/////////////////////////////
+
+function myFunction() {
+ 
+  var copyText = document.getElementById("ba");
+
+ 
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); 
+
+
+  document.execCommand("copy");
+
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
+
 
 </script>
 
