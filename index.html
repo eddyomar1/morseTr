@@ -20,7 +20,7 @@
         <option value="de" onfocus="ke();">decodificar</option>
 
     </select>
-<button onclick="myFunction();">copiar</button>
+<button onclick="copi();">copiar</button>
 
 <button onclick="k();">codificar</button>
 
@@ -144,23 +144,7 @@ document.getElementById("ba").innerHTML = document.getElementById("b").innerHTML
 }
 
 
-var copiar = function(){
-
-var cp = document.getElementById("b").innerHTML;
- 
- cp.select();
- cp.setSelectionRange(0, 99999);
-
-    document.execCommand("copy");
-
-
-
-}
-
-
-/////////////////////////////
-
-function myFunction() {
+function copi() {
  
   var copyText = document.getElementById("ba");
 
@@ -171,8 +155,11 @@ function myFunction() {
 
   document.execCommand("copy");
 
-  /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  
+  alert("the text has been copied / el texto ha sido copiado");
+ 
+  
+
 }
 
 
