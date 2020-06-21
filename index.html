@@ -22,7 +22,13 @@
 <button onclick="k();">codificar</button>
 
 <button onclick="ke();">descodificar</button>
+<br>
+<br>
 
+<div style=" max-width:100%; min-width: 30%;" align="left">
+<h3 style="color:red;">Nota: </h3>
+<span>para escribir en codigo separa las letras por espacios " " y las palabras por comas ",".</span>
+</div>
 
 <script>
 
@@ -93,34 +99,34 @@ var kf = document.getElementById("kf").value;
 for(var x = 0;x<inp.length;x++){
    
     
+    if(inp.charAt(x)=="6" && inp.charAt(x+1)=="1" && inp.charAt(x+2)=="7" && inp.charAt(x+3)=="4"){out += "infinity"; x+=4;}
 
-
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "b"; x+=4;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="."){out += "c"; x+=4;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="."){out += "f"; x+=4;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "h"; x+=4;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="-"){out += "j"; x+=4;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "l"; x+=4;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="."){out += "p"; x+=4;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="." && inp.charAt(x+3)=="-"){out += "q"; x+=4;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="-"){out += "v"; x+=4;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="-"){out += "x"; x+=4;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="-"){out += "y"; x+=4;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "z"; x+=4;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="."){out += "d"; x+=3;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="."){out += "g"; x+=3;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-"){out += "k"; x+=3;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="-"){out += "o"; x+=3;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="."){out += "r"; x+=3;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="."){out += "s"; x+=3;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-"){out += "u"; x+=3;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-"){out += "w"; x+=3;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="-"){out += "a"; x+=2;}
-if(inp.charAt(x)=="." && inp.charAt(x+1)=="."){out += "i"; x+=2;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-"){out += "m"; x+=2;}
-if(inp.charAt(x)=="-" && inp.charAt(x+1)=="."){out += "n"; x+=2;}
-if(inp.charAt(x)=="."){out += "e"; x+=2;}
-if(inp.charAt(x)=="-"){out += "t"; x+=2;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "b"; x+=4;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="."){out += "c"; x+=4;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="."){out += "f"; x+=4;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "h"; x+=4;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="-"){out += "j"; x+=4;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "l"; x+=4;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="."){out += "p"; x+=4;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="." && inp.charAt(x+3)=="-"){out += "q"; x+=4;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="-"){out += "v"; x+=4;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="." && inp.charAt(x+3)=="-"){out += "x"; x+=4;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-" && inp.charAt(x+3)=="-"){out += "y"; x+=4;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="." && inp.charAt(x+3)=="."){out += "z"; x+=4;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="."){out += "d"; x+=3;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="."){out += "g"; x+=3;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-"){out += "k"; x+=3;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="-"){out += "o"; x+=3;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="-" && inp.charAt(x+2)=="."){out += "r"; x+=3;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="."){out += "s"; x+=3;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-"){out += "u"; x+=3;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="." && inp.charAt(x+2)=="-"){out += "w"; x+=3;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="-"){out += "a"; x+=2;}
+else if(inp.charAt(x)=="." && inp.charAt(x+1)=="."){out += "i"; x+=2;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="-"){out += "m"; x+=2;}
+else if(inp.charAt(x)=="-" && inp.charAt(x+1)=="."){out += "n"; x+=2;}
+else if(inp.charAt(x)=="."){out += "e"}
+else if(inp.charAt(x)=="-"){out += "t"}
 
 if(inp.charAt(x)==String.fromCharCode(32) && inp.charAt(x+1)==String.fromCharCode(32)){out += String.fromCharCode(32)}
 if(inp.charAt(x)==String.fromCharCode(44)){out += String.fromCharCode(32)}
